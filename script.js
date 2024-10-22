@@ -76,6 +76,10 @@ function showMonument(monument) {
         if (selectedImage) {
             selectedImage.classList.remove('grayscale'); // Retire la classe "grayscale" de l'image sélectionnée
         }
+        // Mise à jour de l'image de la carte de la France
+        let imgFrance = document.getElementById('img_france');
+        imgFrance.src = "images/carte_france.webp"; // Met à jour avec le chemin de l'image de la carte de la France
+        imgFrance.style.display = "block"; // Affiche l'image de la carte de la France
     }
 }
 

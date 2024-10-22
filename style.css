@@ -46,7 +46,7 @@ button {
     display: grid;
     grid-template-columns: repeat(5, 1fr);    
 }
-img{
+.container img{
     width: 100%;
     aspect-ratio: 1/1;
     cursor: pointer;
@@ -55,10 +55,11 @@ img{
 #infos{
     background-color: black;
     width: 100%;
-    height: 275px;
+    height: 800px;
     margin-top: 20px;
     color: aliceblue;
 }
+
 picture,
 video,
 canvas,
