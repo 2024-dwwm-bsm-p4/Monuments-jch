@@ -1,7 +1,7 @@
 let tour_eiffel = { 
     name: "La Tour Eiffel",
     city: "Paris , FRANCE",
-    description: "La Tour Eiffel est un monument emblématique de Paris,construit par Gustave Eiffel pour l' Exposition universelle de 1889. Mesurant 330 mètres de hauteur, elle est faites de fer et a été initialement critiquée, mais elle est devenue un symbole mondial de la France et de l'ingénierie moderne. Elle attire des millions de visiteurs chaque année pour sa vue panoramique sur la ville. ",
+    description: "La Tour Eiffel est un monument emblématique de Paris, construit par Gustave Eiffel pour l'Exposition universelle de 1889. Mesurant 330 mètres de hauteur, elle est faite de fer et a été initialement critiquée, mais elle est devenue un symbole mondial de la France et de l'ingénierie moderne. Elle attire des millions de visiteurs chaque année pour sa vue panoramique sur la ville.",
 };
 
 let notre_dame = {
@@ -47,9 +47,22 @@ function showMonument(monument) {
     // Met à jour le contenu dans la section infos
     if (selectedMonument) {
         document.getElementById('name').textContent = selectedMonument.name; // Injecte le titre
-        document.getElementById('city').textContent = selectedMonument.city; // Injecte le texte de la ville
+        document.getElementById('city').textContent = selectedMonument.city; // Injecte le texte de la ville stylisé
         document.getElementById('description').textContent = selectedMonument.description; // Injecte la description
+
+         // Réinitialisation de l'animation
+         let infoContainer = document.getElementById('infos');
+
+         // Retire temporairement la classe d'animation pour la réappliquer
+         infoContainer.classList.remove('animated');  // Supposons que tu aies une classe 'animated' pour ton animation
+ 
+         // Forcer un reflow pour réinitialiser l'animation
+         void infoContainer.offsetWidth; // Cette ligne force le navigateur à "recalculer" la disposition (reflow)
+ 
+         // Réappliquer la classe 'animated' pour relancer l'animation
+         infoContainer.classList.add('animated');
     }
     
 }
+
 

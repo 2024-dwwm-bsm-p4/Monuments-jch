@@ -29,7 +29,7 @@ body {
 .btn{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10rem;
+    grid-gap: 10rem;
     padding: 20px 50px 30px;
 }
 button {
@@ -73,7 +73,6 @@ textarea,
 select {
     font: inherit;
 }
-
 
 h1{
     text-align: center;
@@ -125,4 +124,17 @@ a {
 .grayscale {
     filter: grayscale(100%);
     transition: filter 0.5s; /* Pour un effet de transition fluide */
+}
+.animated {
+    animation: fadeInRight 5s ease;
+}
+@keyframes fadeInRight {    
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }        
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
