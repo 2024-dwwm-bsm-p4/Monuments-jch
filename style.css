@@ -26,7 +26,39 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-img,
+.btn{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10rem;
+    padding: 20px 50px 30px;
+}
+button {
+    background-color: black;
+    border: unset;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+}
+img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+#infos{
+    background-color: black;
+    width: 100%;
+    height: 275px;
+    margin-top: 20px;
+    color: aliceblue;
+}
 picture,
 video,
 canvas,
@@ -42,20 +74,42 @@ select {
     font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 15px;
+    overflow-wrap: break-word;
+
+}
+h3{
+    font-size: 3.5rem;
+    padding: 5px;
+}
+h4{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    overflow-wrap: break-word;
+}
+h3, h4, p{
+    padding: 0 20px 5px 25px;
+}
+
 h5,
 h6 {
     overflow-wrap: break-word;
 }
 
-button {
-    background-color: unset;
-    border: unset;
-}
+
 
 a {
     text-decoration: unset;
@@ -65,4 +119,10 @@ a {
 #root,
 #__next {
     isolation: isolate;
+}
+
+/* Classe pour rendre une image en noir et blanc */
+.grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.5s; /* Pour un effet de transition fluide */
 }
