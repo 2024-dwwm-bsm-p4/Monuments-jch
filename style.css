@@ -100,7 +100,7 @@ p{
     overflow-wrap: break-word;
 }
 h3, h4, p{
-    padding: 0 20px 5px 25px;
+    padding: 0 20px 5px 35px;
 }
 
 h5,
@@ -120,14 +120,10 @@ a {
     isolation: isolate;
 }
 
-/* Classe pour rendre une image en noir et blanc */
-.grayscale {
-    filter: grayscale(100%);
-    transition: filter 0.5s; /* Pour un effet de transition fluide */
-}
 .animated {
     animation: fadeInRight 5s ease;
 }
+
 @keyframes fadeInRight {    
     0%{
         opacity: 0;
@@ -137,4 +133,10 @@ a {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/* Classe pour rendre une image en noir et blanc */
+.grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.5s; /* Pour un effet de transition fluide */
 }
