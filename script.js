@@ -38,9 +38,6 @@ let versailles = {
     coordinates: {x: 48.5, y: 19} // Coordonnées en pourcentage
 };
 
-// Variable pour la carte
-var map;
-
 function showMonument(monument) {
     let selectedMonument;
 
@@ -90,7 +87,6 @@ function showMonument(monument) {
          marker.style.display = 'block'; // Affiche le marqueur
          marker.style.left = selectedMonument.coordinates.x + '%'; // Position horizontale
          marker.style.top = selectedMonument.coordinates.y + '%'; // Position verticale
-        
     }
 }
 

@@ -26,12 +26,27 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 15px;
+    overflow-wrap: break-word;
+}
+
 .btn{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10rem;
     padding: 20px 50px 30px;
 }
+
 button {
     background-color: black;
     border: unset;
@@ -46,6 +61,7 @@ button {
     display: grid;
     grid-template-columns: repeat(5, 1fr);    
 }
+
 .container img{
     width: 100%;
     aspect-ratio: 1/1;
@@ -59,71 +75,39 @@ button {
     margin-top: 20px;
     color: aliceblue;
 }
-.fine-text {
-    font-weight: 100; /* Utilisation d'une valeur faible pour le poids de la police */
-    font-style: normal; /* Style normal (pas italique) */
-}
 
-
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem;
-    padding: 20px;
-}
-h2{
-    text-align: center;
-    text-decoration: underline;
-    padding: 15px;
-    overflow-wrap: break-word;
-
-}
 h3{
     font-size: 3.5rem;
     padding: 5px;
 }
+
 h4{
     font-size: 2rem;
 }
+
 p{
     font-size: 1.5rem;
     font-weight: lighter;
     overflow-wrap: break-word;
 }
+
 h3, h4, p{
     padding: 0 20px 5px 35px;
 }
 
-h5,
-h6 {
-    overflow-wrap: break-word;
+.fine-text {
+    font-weight: 100; /* Utilisation d'une valeur faible pour le poids de la police */
+    font-style: normal; /* Style normal (pas italique) */
 }
 
-
-
-a {
-    text-decoration: unset;
-    color: unset;
+#map-container {
+    position: relative;
+    width: 500px; /* Vous pouvez ajuster la taille */
+    margin: 25px auto;
 }
 
-#root,
-#__next {
-    isolation: isolate;
+#img_france {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
 }
 
 .animated {
@@ -145,17 +129,13 @@ a {
 .grayscale {
     filter: grayscale(100%);
     transition: filter 0.5s; /* Pour un effet de transition fluide */
-}    
-
-#map-container {
-    position: relative;
-    width: 500px; /* Vous pouvez ajuster la taille */
-    margin: 25px auto;
 }
 
-#img_france {
-    width: 100%; /* L'image prend toute la largeur du conteneur */
-}
+    
+
+
+
+
 
 
 
