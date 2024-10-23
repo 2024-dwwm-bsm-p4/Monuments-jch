@@ -59,6 +59,11 @@ button {
     margin-top: 20px;
     color: aliceblue;
 }
+.fine-text {
+    font-weight: 100; /* Utilisation d'une valeur faible pour le poids de la police */
+    font-style: normal; /* Style normal (pas italique) */
+}
+
 
 picture,
 video,
@@ -140,4 +145,18 @@ a {
 .grayscale {
     filter: grayscale(100%);
     transition: filter 0.5s; /* Pour un effet de transition fluide */
+}    
+
+#map-container {
+    position: relative;
+    width: 500px; /* Vous pouvez ajuster la taille */
+    margin: 25px auto;
 }
+
+#img_france {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+}
+
+
+
+
